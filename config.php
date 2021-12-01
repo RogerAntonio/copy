@@ -2,7 +2,7 @@
 
 $config = array();
 $config['name'] = "Alerts";
-$config['author'] = "Weblama";
+$config['author'] = "Antonio Vandekerckhove";
 $config['no_cache'] = false;
 $config['ui'] = true;
 $config['ui_admin'] = false;
