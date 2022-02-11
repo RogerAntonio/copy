@@ -8,5 +8,5 @@ $config['ui'] = true;
 $config['ui_admin'] = false;
 $config['is_system'] = true;
 $config['position'] = 2;
-$config['version'] = 0.3;
+$config['version'] = 0.4;
 $config['categories'] = "content";
