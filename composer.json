@@ -1,6 +1,6 @@
 {
   "name": "microweber-modules/alerts",
-  "description": "Bootstrap 5 Alert component implementation for Microweber",
+  "description": "Bootstrap 5 Alerts",
   "license": "MIT",
   "homepage": "https://github.com/RogerAntonio/alerts",
   "authors": [
