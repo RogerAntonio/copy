@@ -10,13 +10,17 @@ description: Default
 
 */
 ?>
-
-<div id="<?php print $alert_id ?>" class="alert <?php print $style; ?>" role="alert">
-  <?php print $icon; ?>
-  <div class="edit" data-field="alert_text" rel="alert_module" data-id="<?php print $params['id'] ?>" <?php print $attributes ?>>
-    <p class="element">
-      <?php _e('Click here to edit the alert message. You can change the alert color by changing the alert type in the module settings.');?>
-    </p>
+<script>
+  mw.require("<?php print $config['url_to_module']; ?>copy.css", true);
+  mw.require("<?php print $config['url_to_module']; ?>copy.js", true);
+</script>
+<div id="<?php print $copy_id; ?>" class="copy-module copy-to-clipboard" role="note">
+  <div class="edit safe-mode nodrop" data-field="copy_text" rel="copy_module" data-id="<?php print $copy_id; ?>" <?php print $attributes; ?>>
+    <small class="element">
+      <?php _e('Change this to anything you wish to have copied.'); ?>
+    </small>
   </div>
-  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close alert"></button>
+  <button class="btn <?php print $type; ?> btn-sm" onclick="CopyToClipboard('<?php print $copy_id; ?>')" data-bs-toggle="tooltip" data-bs-placement="top" title="<?php _e('Click to copy'); ?>">
+    <?php _e('Copy'); ?>
+  </button>
 </div>

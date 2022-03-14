@@ -1,0 +1,19 @@
+.copy-to-clipboard {
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  width: -moz-fit-content;
+  width: fit-content;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 5px 5px 5px 10px;
+  margin-bottom: 10px;
+}
+.copy-to-clipboard .btn {
+  padding: 5px 10px;
+  margin: 0;
+  margin-left: 10px;
+}
+.copy-to-clipboard .btn i {
+  margin: 0;
+}

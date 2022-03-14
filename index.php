@@ -1,48 +1,33 @@
-<link rel="stylesheet" href="<?php print $config['url_to_module']; ?>alert.css" />
-<script>
-  mw.lib.require('bootstrap5js');
-</script>
 <?php
-$alert_id = 'alert-' . $params['id'];
+$copy_id = $params['id'];
 
-$alert_options = [];
-$alert_options['alert_style'] = '';
-$alert_options['icon'] = '';
-$alert_options['alert_id'] = '';
+$copy_options = [];
+$copy_options['btn_type'] = '';
+$copy_options['copy_id'] = '';
 
-$get_alert_options = get_module_options($params['id']);
-if (!empty($get_alert_options)) {
-  foreach ($get_alert_options as $get_alert_option) {
-    $alert_options[$get_alert_option['option_key']] = $get_alert_option['option_value'];
+$get_copy_options = get_module_options($params['id']);
+if (!empty($get_copy_options)) {
+  foreach ($get_copy_options as $get_copy_option) {
+    $copy_options[$get_copy_option['option_key']] = $get_copy_option['option_value'];
   }
 }
 
-$style = $alert_options['alert_style'];
+$type = $copy_options['btn_type'];
 
-if ($alert_options['icon']) {
-  $icon = $alert_options['icon'];
-} elseif (isset($params['icon'])) {
-  $icon = $params['icon'];
-} else {
-  $icon = '';
-}
-
-$icon = html_entity_decode($icon);
-
-if (isset($params['alert_id'])) {
-  $alert_id = $params['alert_id'];
+if (isset($params['copy_id'])) {
+  $copy_id = $params['copy_id'];
 }
 
 $attributes = '';
-if (isset($params['alert_onclick'])) {
-  $attributes .= 'onclick="' . $params['alert_onclick'] . '"';
+if (isset($params['copy_onclick'])) {
+  $attributes .= 'onclick="' . $params['copy_onclick'] . '"';
 }
 
-if ($style == false and isset($params['alert_style'])) {
-  $style = $params['alert_style'];
+if ($type == false and isset($params['btn_type'])) {
+  $type = $params['btn_type'];
 }
-if ($style == '') {
-  $style = 'alert-light';
+if ($type == '') {
+  $type = 'btn-primary';
 }
 
 $module_template = get_option('data-template', $params['id']);
@@ -60,4 +45,3 @@ if (is_file($template_file) != false) {
 } else {
   print lnotif("No template found. Please choose a template.");
 }
-?>

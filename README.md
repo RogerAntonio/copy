@@ -1,7 +1,6 @@
-# Bootstrap 5 Alerts
+# Copy to Clipboard
 
-A standalone implementation of the Bootstrap 5 Alerts component for Microweber.
-Includes basic theming for templates that don't support Bootstrap 5.
+Provide your visitors with a copy-to-clipboard button for copying pre-defined texts while allowing the website editor to change the text easily.
 
 ## Installation
 
@@ -10,16 +9,9 @@ Includes basic theming for templates that don't support Bootstrap 5.
 2.  **Method 2**
     Download the latest version here.
     Unzip the file you downloaded.
-    Drop the "alerts" folder into your website's module folder
+    Drop the "copy_to_clipboard" folder into your website's module folder
 
 ## Usage
 
-After installing the module, you can find the alerts in your live-edit sidepanel under "Modules".
-Click-and-drag the module onto your page and an alert will appear. By default it will be white.
-
-![Alerts module in live-edit sidepanel](https://i.imgur.com/V772QKM.png)
-
-You can change the color of the alerts by changing the Alert Type in the alert settings.
-You can find these settings by hovering over the alert, and clicking the Edit icon.
-
-![Chaning the Alert Type in the Alert settings](https://i.imgur.com/px5TpDI.png)
+After installing the module, you can find the element in your live-edit sidepanel under "Modules".
+Click-and-drag the module onto your page and you will see a textfield appear with a button next to it. While logged in, you can change the text but you can't change it while logged off.

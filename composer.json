@@ -1,6 +1,6 @@
 {
-  "name": "microweber-modules/alerts",
-  "description": "Bootstrap 5 Alerts",
+  "name": "microweber-modules/copy",
+  "description": "Copy to Clipboard",
   "license": "MIT",
   "homepage": "https://github.com/RogerAntonio/alerts",
   "authors": [
@@ -10,9 +10,9 @@
     }
   ],
   "keywords": [
-    "Bootstrap",
-    "Alerts"
+    "Copy",
+    "Clipboard"
   ],
   "type": "microweber-module",
-  "target-dir": "alerts"
+  "target-dir": "copy"
 }
