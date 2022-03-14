@@ -5,5 +5,4 @@ function CopyToClipboard(id) {
   window.getSelection().addRange(r);
   document.execCommand("copy");
   window.getSelection().removeAllRanges();
-  alert("Text has been copied, now paste in the text-area");
 }
